@@ -63,7 +63,7 @@ depending on USB functionalities implemented by user*/
 void Init_Acquisition_Peripherals(uint32_t AudioFreq, uint32_t Device, uint32_t ChnlNbr);
 void Start_Acquisition(void);
 void Error_Handler(void);
-void AudioProcess(void); v bnbnbnbnbnbnbnbnbnb
+void AudioProcess(void);
 
 /**
   * @}
