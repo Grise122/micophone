@@ -1,5 +1,5 @@
 Application/User/cube_hal_l4.o: \
- D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/Microphones_Streaming/Src/cube_hal_l4.c \
+ D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/cube_hal_l4.c \
  ../../../Inc/cube_hal.h \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../../../Inc/stm32l4xx_hal_conf.h \

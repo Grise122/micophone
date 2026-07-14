@@ -1,5 +1,5 @@
 Application/User/usbd_audio_if.o: \
- D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/Microphones_Streaming/Src/usbd_audio_if.c \
+ D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/usbd_audio_if.c \
  ../../../Inc/usbd_audio_if.h \
  ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/usbd_audio_in.h \
  ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
