@@ -11569,10 +11569,10 @@ LOAD D:/stm32cube/STM32CubeIDE_2.2.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.m
  .debug_str     0x0017abba   0x16a048 ./Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc.o
  .debug_str     0x0017abba   0x16a42e ./Drivers/STM32L4xx_HAL_Driver/stm32l4xx_hal_rcc_ex.o
  .debug_str     0x0017abba   0x16a30f ./Drivers/STM32L4xx_HAL_Driver/stm32l4xx_ll_usb.o
- .debug_str     0x0017abba   0x16e92f ./Middlewares/STM32_USBD_Library/Class/AUDIO_IN/usbd_audio_in.o
- .debug_str     0x0017abba   0x16e2ab ./Middlewares/STM32_USBD_Library/Core/usbd_core.o
- .debug_str     0x0017abba   0x16e0d6 ./Middlewares/STM32_USBD_Library/Core/usbd_ctlreq.o
- .debug_str     0x0017abba   0x16dfab ./Middlewares/STM32_USBD_Library/Core/usbd_ioreq.o
+ .debug_str     0x0017abba   0x16e923 ./Middlewares/STM32_USBD_Library/Class/AUDIO_IN/usbd_audio_in.o
+ .debug_str     0x0017abba   0x16e29f ./Middlewares/STM32_USBD_Library/Core/usbd_core.o
+ .debug_str     0x0017abba   0x16e0ca ./Middlewares/STM32_USBD_Library/Core/usbd_ctlreq.o
+ .debug_str     0x0017abba   0x16df9f ./Middlewares/STM32_USBD_Library/Core/usbd_ioreq.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Application/Patch/stm32l4xx_hal_pcd_patch.o
