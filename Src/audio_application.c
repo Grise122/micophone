@@ -95,7 +95,7 @@ void BSP_AUDIO_IN_TransferComplete_CallBack(uint32_t Instance)
 
 void AudioProcess(void)
 {
-  Send_Audio_to_USB((int16_t *)PCM_Buffer, (AUDIO_IN_SAMPLING_FREQUENCY / 1000)*AUDIO_IN_CHANNELS * N_MS_PER_INTERRUPT);
+//  Send_Audio_to_USB((int16_t *)PCM_Buffer, (AUDIO_IN_SAMPLING_FREQUENCY / 1000)*AUDIO_IN_CHANNELS * N_MS_PER_INTERRUPT);
 }
 
 /**

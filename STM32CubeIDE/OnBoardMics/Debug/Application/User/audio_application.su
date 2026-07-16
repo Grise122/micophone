@@ -1,6 +1,6 @@
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:68:6:BSP_AUDIO_IN_HalfTransfer_CallBack	16	static
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:80:6:BSP_AUDIO_IN_TransferComplete_CallBack	16	static
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:96:6:AudioProcess	8	static
+D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:96:6:AudioProcess	4	static
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:109:6:Init_Acquisition_Peripherals	24	static
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:131:6:Start_Acquisition	8	static
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/audio_application.c:140:6:Error_Handler	4	static

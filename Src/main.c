@@ -43,8 +43,8 @@
 /** @defgroup MAIN_Exported_Variables
   * @{
   */
-USBD_HandleTypeDef hUSBDDevice;
-extern USBD_AUDIO_ItfTypeDef  USBD_AUDIO_fops;
+//USBD_HandleTypeDef hUSBDDevice;
+//extern USBD_AUDIO_ItfTypeDef  USBD_AUDIO_fops;
 SAI_HandleTypeDef            SaiHandle;
 DMA_HandleTypeDef            hSaiDma;
 
@@ -79,7 +79,7 @@ int main(void)
   /* Enable Power Clock*/
   __HAL_RCC_PWR_CLK_ENABLE();
   /* enable USB power on Pwrctrl CR2 register */
-  HAL_PWREx_EnableVddUSB();
+//  HAL_PWREx_EnableVddUSB();
 
   /* Configure the system clock */
   SystemClock_Config();
@@ -89,17 +89,31 @@ int main(void)
   BSP_LED_Init(LED1);
   BSP_LED_Off(LED1);
 
+#ifndef DISABLE_USB_DRIVEN_ACQUISITION
+  /* enable USB power on Pwrctrl CR2 register */
+//  HAL_PWREx_EnableVddUSB();
 
-  /* Initialize USB descriptor basing on channels number and sampling frequency */
-  USBD_AUDIO_Init_Microphone_Descriptor(&hUSBDDevice, AUDIO_IN_SAMPLING_FREQUENCY, AUDIO_IN_CHANNELS);
-  /* Init Device Library */
-  USBD_Init(&hUSBDDevice, &AUDIO_Desc, 0);
-  /* Add Supported Class */
-  USBD_RegisterClass(&hUSBDDevice, &USBD_AUDIO);
-  /* Add Interface callbacks for AUDIO Class */
-  USBD_AUDIO_RegisterInterface(&hUSBDDevice, &USBD_AUDIO_fops);
-  /* Start Device Process */
-  USBD_Start(&hUSBDDevice);
+  //  /* Initialize USB descriptor basing on channels number and sampling frequency */
+  //  USBD_AUDIO_Init_Microphone_Descriptor(&hUSBDDevice, AUDIO_IN_SAMPLING_FREQUENCY, AUDIO_IN_CHANNELS);
+  //  /* Init Device Library */
+  //  USBD_Init(&hUSBDDevice, &AUDIO_Desc, 0);
+  //  /* Add Supported Class */
+  //  USBD_RegisterClass(&hUSBDDevice, &USBD_AUDIO);
+  //  /* Add Interface callbacks for AUDIO Class */
+  //  USBD_AUDIO_RegisterInterface(&hUSBDDevice, &USBD_AUDIO_fops);
+  //  /* Start Device Process */
+  //  USBD_Start(&hUSBDDevice);
+#endif
+//  /* Initialize USB descriptor basing on channels number and sampling frequency */
+//  USBD_AUDIO_Init_Microphone_Descriptor(&hUSBDDevice, AUDIO_IN_SAMPLING_FREQUENCY, AUDIO_IN_CHANNELS);
+//  /* Init Device Library */
+//  USBD_Init(&hUSBDDevice, &AUDIO_Desc, 0);
+//  /* Add Supported Class */
+//  USBD_RegisterClass(&hUSBDDevice, &USBD_AUDIO);
+//  /* Add Interface callbacks for AUDIO Class */
+//  USBD_AUDIO_RegisterInterface(&hUSBDDevice, &USBD_AUDIO_fops);
+//  /* Start Device Process */
+//  USBD_Start(&hUSBDDevice);
 
   /* Start audio acquisition and streaming */
 

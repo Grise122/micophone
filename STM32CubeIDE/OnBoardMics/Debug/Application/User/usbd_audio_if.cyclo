@@ -7,4 +7,3 @@ D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demon
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/usbd_audio_if.c:179:15:Audio_Pause	1
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/usbd_audio_if.c:190:15:Audio_Resume	1
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/usbd_audio_if.c:201:15:Audio_CommandMgr	1
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/usbd_audio_if.c:215:6:Send_Audio_to_USB	1
