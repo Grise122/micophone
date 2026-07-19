@@ -16,7 +16,7 @@ D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:443:9:
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:459:9:BSP_LED_Toggle	1
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:474:9:BSP_COM_Init	1
 D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:500:9:BSP_COM_DeInit	2
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:528:26:MX_USART2_UART_Init	5
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:572:13:USART2_MspInit	1
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:593:13:USART2_MspDeInit	1
-D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:674:9:Sensor_IO_SPI_CS_Init_All	1
+D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:527:19:MX_USART2_UART_Init	5
+D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:573:13:USART2_MspInit	1
+D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:594:13:USART2_MspDeInit	1
+D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Drivers/BSP/STWIN/STWIN.c:675:9:Sensor_IO_SPI_CS_Init_All	1
