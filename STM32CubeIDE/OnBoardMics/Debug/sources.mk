@@ -29,6 +29,8 @@ Application/User \
 Drivers/BSP/STWIN \
 Drivers/CMSIS \
 Drivers/STM32L4xx_HAL_Driver \
+Middlewares/FatFs/Core \
+Middlewares/FatFs/Options \
 Middlewares/STM32_USBD_Library/Class/AUDIO_IN \
 Middlewares/STM32_USBD_Library/Core \
 

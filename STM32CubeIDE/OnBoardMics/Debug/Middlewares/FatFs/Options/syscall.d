@@ -1,6 +1,8 @@
-Application/User/main.o: \
- D:/stm32cube/STM32CubeExpansion_MEMSMIC1_V5.9.0/Projects/STM32L4R9ZI-STWIN/Demonstration/micophone/Src/main.c \
- ../../../Inc/cube_hal.h \
+Middlewares/FatFs/Options/syscall.o: \
+ D:/stm32cube/fp-sns-datalog1-main/Middlewares/Third_Party/FatFs/src/option/syscall.c \
+ D:/stm32cube/fp-sns-datalog1-main/Middlewares/Third_Party/FatFs/src/option/../ff.h \
+ D:/stm32cube/fp-sns-datalog1-main/Middlewares/Third_Party/FatFs/src/option/../integer.h \
+ ../../../Inc/ffconf.h \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  ../../../Inc/stm32l4xx_hal_conf.h \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h \
@@ -89,27 +91,10 @@ Application/User/main.o: \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart.h \
  ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart_ex.h \
- ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_wwdg.h \
- ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_opamp.h \
- ../../../Inc/stm32xx_it.h ../../../Inc/cube_hal.h \
- ../../../../../../../Drivers/BSP/STWIN/STWIN.h ../../../Inc/STWIN_conf.h \
- ../../../../../../../Drivers/BSP/STWIN/STWIN_bus.h \
- ../../../Inc/STWIN_errno.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
- ../../../Inc/usbd_conf.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
- ../../../Inc/usbd_desc.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/usbd_audio_in.h \
- ../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- ../../../Inc/usbd_audio_if.h ../../../Inc/audio_application.h \
- ../../../../../../../Drivers/BSP/STWIN/STWIN_audio.h \
- ../../../../../../../Drivers/BSP/STWIN/STWIN.h ../../../Inc/ff.h \
- ../../../Inc/integer.h ../../../Inc/ffconf.h ../../../Inc/STWIN_sd.h
-../../../Inc/cube_hal.h:
+ ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_wwdg.h
+D:/stm32cube/fp-sns-datalog1-main/Middlewares/Third_Party/FatFs/src/option/../ff.h:
+D:/stm32cube/fp-sns-datalog1-main/Middlewares/Third_Party/FatFs/src/option/../integer.h:
+../../../Inc/ffconf.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 ../../../Inc/stm32l4xx_hal_conf.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:
@@ -199,28 +184,3 @@ Application/User/main.o: \
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_usart_ex.h:
 ../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_wwdg.h:
-../../../../../../../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_ll_opamp.h:
-../../../Inc/stm32xx_it.h:
-../../../Inc/cube_hal.h:
-../../../../../../../Drivers/BSP/STWIN/STWIN.h:
-../../../Inc/STWIN_conf.h:
-../../../../../../../Drivers/BSP/STWIN/STWIN_bus.h:
-../../../Inc/STWIN_errno.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
-../../../Inc/usbd_conf.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
-../../../Inc/usbd_desc.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/usbd_audio_in.h:
-../../../../../../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-../../../Inc/usbd_audio_if.h:
-../../../Inc/audio_application.h:
-../../../../../../../Drivers/BSP/STWIN/STWIN_audio.h:
-../../../../../../../Drivers/BSP/STWIN/STWIN.h:
-../../../Inc/ff.h:
-../../../Inc/integer.h:
-../../../Inc/ffconf.h:
-../../../Inc/STWIN_sd.h:

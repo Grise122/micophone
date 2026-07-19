@@ -23,6 +23,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "cube_hal.h"
 #include <string.h>
+#include "ff.h"
+#include "STWIN_sd.h"
+
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
@@ -43,8 +46,8 @@
 /** @defgroup MAIN_Exported_Variables
   * @{
   */
-USBD_HandleTypeDef hUSBDDevice;
-extern USBD_AUDIO_ItfTypeDef  USBD_AUDIO_fops;
+//USBD_HandleTypeDef hUSBDDevice;
+//extern USBD_AUDIO_ItfTypeDef  USBD_AUDIO_fops;
 SAI_HandleTypeDef            SaiHandle;
 DMA_HandleTypeDef            hSaiDma;
 UART_HandleTypeDef huart2;
@@ -128,35 +131,34 @@ int main(void)
   BSP_LED_Init(LED1);
   BSP_LED_Off(LED1);
 
-  /* Initialize USB descriptor basing on channels number and sampling frequency */
-  USBD_AUDIO_Init_Microphone_Descriptor(&hUSBDDevice, AUDIO_IN_SAMPLING_FREQUENCY, AUDIO_IN_CHANNELS);
-  /* Init Device Library */
-  USBD_Init(&hUSBDDevice, &AUDIO_Desc, 0);
-  /* Add Supported Class */
-  USBD_RegisterClass(&hUSBDDevice, &USBD_AUDIO);
-  /* Add Interface callbacks for AUDIO Class */
-  USBD_AUDIO_RegisterInterface(&hUSBDDevice, &USBD_AUDIO_fops);
-  /* Start Device Process */
-  USBD_Start(&hUSBDDevice);
+//  /* Initialize USB descriptor basing on channels number and sampling frequency */
+//  USBD_AUDIO_Init_Microphone_Descriptor(&hUSBDDevice, AUDIO_IN_SAMPLING_FREQUENCY, AUDIO_IN_CHANNELS);
+//  /* Init Device Library */
+//  USBD_Init(&hUSBDDevice, &AUDIO_Desc, 0);
+//  /* Add Supported Class */
+//  USBD_RegisterClass(&hUSBDDevice, &USBD_AUDIO);
+//  /* Add Interface callbacks for AUDIO Class */
+//  USBD_AUDIO_RegisterInterface(&hUSBDDevice, &USBD_AUDIO_fops);
+//  /* Start Device Process */
+//  USBD_Start(&hUSBDDevice);
 
   /* Start audio acquisition and streaming */
 
-#ifdef DISABLE_USB_DRIVEN_ACQUISITION
+
   Init_Acquisition_Peripherals(AUDIO_IN_SAMPLING_FREQUENCY, ACTIVE_MICROPHONES_MASK, AUDIO_IN_CHANNELS);
   Start_Acquisition();
-#endif
   MX_USART2_UART_Init();
-  uint32_t last_send_time = 0;
-  while (1)
-  {
-	  if (HAL_GetTick() - last_send_time >= 1000)
-	      {
-	        char msg[] = "hello\r\n";
-	        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
-	        last_send_time = HAL_GetTick();
-	      }
 
-  }
+//  while (1)
+//  {
+//	  if (HAL_GetTick() - last_send_time >= 1000)
+//	      {
+//	        char msg[] = "hello\r\n";
+//	        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+//	        last_send_time = HAL_GetTick();
+//	      }
+//
+//  }
 }
 
 /* Private functions ---------------------------------------------------------*/

@@ -11,6 +11,8 @@ RM := rm -rf
 -include sources.mk
 -include Middlewares/STM32_USBD_Library/Core/subdir.mk
 -include Middlewares/STM32_USBD_Library/Class/AUDIO_IN/subdir.mk
+-include Middlewares/FatFs/Options/subdir.mk
+-include Middlewares/FatFs/Core/subdir.mk
 -include Drivers/STM32L4xx_HAL_Driver/subdir.mk
 -include Drivers/CMSIS/subdir.mk
 -include Drivers/BSP/STWIN/subdir.mk
